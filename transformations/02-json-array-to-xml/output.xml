@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<catalog>
+  <item id="P001" available="true">
+    <name>Laptop</name>
+    <price>75000</price>
+  </item>
+  <item id="P002" available="false">
+    <name>Mouse</name>
+    <price>599</price>
+  </item>
+  <item id="P003" available="true">
+    <name>Keyboard</name>
+    <price>1200</price>
+  </item>
+</catalog>

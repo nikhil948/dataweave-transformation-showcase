@@ -1,0 +1,75 @@
+{
+  "basicConstraints": 54,
+  "criticalExtensionOIDs": [
+    "erat",
+    "aliquam",
+    "tempor"
+  ],
+  "extendedKeyUsage": [
+    "a",
+    "adipiscing",
+    "faucibus"
+  ],
+  "extensions": [
+    {
+      "criticality": false,
+      "oid": "dolor"
+    }
+  ],
+  "issuerAlternativeNames": [
+    {
+      "name": "Abraham",
+      "type": 97
+    }
+  ],
+  "issuerDN": {
+    "commonName": "consectetur",
+    "name": "Adelle"
+  },
+  "issuerUniqueID": [
+    false,
+    false,
+    false
+  ],
+  "issuerX500Principal": {
+    "name": "Abel"
+  },
+  "keyUsage": [
+    false,
+    true
+  ],
+  "name": "Carrol",
+  "nonCriticalExtensionOIDs": [
+    "ut",
+    "sodales"
+  ],
+  "notAfter": "2025-07-31",
+  "notBefore": "2024-06-08",
+  "publicKey": {
+    "algorithm": "ipsum",
+    "modulus": 39,
+    "params": 19,
+    "publicKey": "mi"
+  },
+  "serialNumber": 40,
+  "serialNumberObject": {
+    "serialNumber": 85
+  },
+  "sigAlgName": "consectetur",
+  "sigAlgOID": "faucibus",
+  "subjectAlternativeNames": [
+    {
+      "name": "Clifton",
+      "type": 3
+    }
+  ],
+  "subjectDN": {
+    "commonName": "molestie",
+    "name": "Agnus"
+  },
+  "subjectX500Principal": {
+    "name": "Ai"
+  },
+  "type": "consectetur",
+  "version": 44
+}

@@ -1,0 +1,6 @@
+{
+  "activeEmployees": [
+    { "employeeId": "E001", "fullName": "Anjali Singh", "department": "IT" },
+    { "employeeId": "E003", "fullName": "Priya Nair",   "department": "Finance" }
+  ]
+}

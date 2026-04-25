@@ -1,0 +1,5 @@
+[
+  { "txnId": "T001", "product": "Laptop",   "qty": 2,  "unitPrice": 75000 },
+  { "txnId": "T002", "product": "Mouse",    "qty": 10, "unitPrice": 599   },
+  { "txnId": "T003", "product": "Keyboard", "qty": 5,  "unitPrice": 1200  }
+]

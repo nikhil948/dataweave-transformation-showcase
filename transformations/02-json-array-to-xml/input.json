@@ -1,0 +1,7 @@
+{
+  "products": [
+    { "id": "P001", "name": "Laptop",   "price": 75000, "inStock": true },
+    { "id": "P002", "name": "Mouse",    "price": 599,   "inStock": false },
+    { "id": "P003", "name": "Keyboard", "price": 1200,  "inStock": true }
+  ]
+}

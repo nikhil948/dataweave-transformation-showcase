@@ -1,0 +1,116 @@
+<mule xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core" xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd  http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd  http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd">
+    <http:listener-config name="Listener-config">
+        <http:listener-connection host="0.0.0.0" port="8081"></http:listener-connection>
+    </http:listener-config>
+    <http:listener-config name="Listener-config2">
+        <http:listener-connection host="0.0.0.0" port="8082"></http:listener-connection>
+    </http:listener-config>
+    <http:listener-config name="Listener-config3">
+        <http:listener-connection host="0.0.0.0" port="8083"></http:listener-connection>
+    </http:listener-config>
+    <http:listener-config name="Listener-config4">
+        <http:listener-connection host="0.0.0.0" port="8084"></http:listener-connection>
+    </http:listener-config>
+    <http:listener-config name="Listener-config5">
+        <http:listener-connection host="0.0.0.0" port="8085"></http:listener-connection>
+    </http:listener-config>
+    <flow name="name1">
+        <http:listener config-ref="Listener-config" doc:id="lgqoxa" doc:name="Listener" path="/transform1"></http:listener>
+        <ee:transform doc:id="ccapng" doc:name="Transform">
+            <ee:message>
+                <ee:set-payload doc:id="ygobcq" doc:name="Set payload"><![CDATA[%dw 2.0
+output application/json
+---
+{
+  orderId:       payload.order.id,
+  customerName:  payload.order.customer.name,
+  email:         payload.order.customer.contact.email,
+  phone:         payload.order.customer.contact.phone,
+  totalAmount:   payload.order.amount,
+  orderStatus:   upper(payload.order.status)
+}]]></ee:set-payload>
+            </ee:message>
+        </ee:transform>
+        <logger doc:id="jrlaid" doc:name="Logger"></logger>
+    </flow>
+    <flow name="name2">
+        <http:listener config-ref="Listener-config2" doc:id="viawuo" doc:name="Listener" path="/transform2"></http:listener>
+        <ee:transform doc:id="cpulxp" doc:name="Transform">
+            <ee:message>
+                <ee:set-payload doc:id="mfusxc" doc:name="Set payload"><![CDATA[%dw 2.0
+output application/xml
+---
+{
+  catalog: {
+    (payload.products map (product) -> {
+      item @(id: product.id, available: product.inStock): {
+        name:  product.name,
+        price: product.price
+      }
+    })
+  }
+}]]></ee:set-payload>
+            </ee:message>
+        </ee:transform>
+        <logger doc:id="uyhhup" doc:name="Logger"></logger>
+    </flow>
+    <flow name="name3">
+        <http:listener config-ref="Listener-config3" doc:id="fqnaqp" doc:name="Listener" path="/transform3"></http:listener>
+        <ee:transform doc:id="foemay" doc:name="Transform">
+            <ee:message>
+                <ee:set-payload doc:id="zbxgbk" doc:name="Set payload"><![CDATA[%dw 2.0
+output application/json
+---
+{
+  activeEmployees: (payload.employees.*employee 
+    filter (emp) -> emp.status == "ACTIVE") 
+    map (emp) -> {
+      employeeId:   emp.id,
+      fullName:     emp.name,
+      department:   emp.dept
+    }
+}]]></ee:set-payload>
+            </ee:message>
+        </ee:transform>
+        <logger doc:id="kuattb" doc:name="Logger"></logger>
+    </flow>
+    <flow name="name4">
+        <http:listener config-ref="Listener-config4" doc:id="kbfewz" doc:name="Listener" path="/transform4"></http:listener>
+        <ee:transform doc:id="soydyt" doc:name="Transform">
+            <ee:message>
+                <ee:set-payload doc:id="hpfpif" doc:name="Set payload"><![CDATA[%dw 2.0
+output application/csv header=true
+---
+payload map (txn) -> {
+  "Transaction ID": txn.txnId,
+  "Product":        txn.product,
+  "Quantity":       txn.qty,
+  "Unit Price":     txn.unitPrice,
+  "Total Value":    txn.qty * txn.unitPrice
+}]]></ee:set-payload>
+            </ee:message>
+        </ee:transform>
+        <logger doc:id="aathcz" doc:name="Logger"></logger>
+    </flow>
+    <flow name="name5">
+        <http:listener doc:id="oiqljz" doc:name="Listener" path="/transform5" config-ref="Listener-config5"></http:listener>
+        <ee:transform doc:name="Transform" doc:id="qdijas" >
+            <ee:message >
+                <ee:set-payload doc:name="Set payload" doc:id="cvdbdm" ><![CDATA[%dw 2.0
+output application/json
+---
+{
+  transactionReference: payload.txn_ref,
+  transactionDate:      payload.txn_dt as Date {format: "yyyy-MM-dd"} 
+                          as String {format: "dd-MMM-yyyy"},
+  accountNumber:        payload.acct_no,
+  transactionAmount:    payload.amt,
+  transactionType:      if (payload.txn_type == "CR") "CREDIT" else "DEBIT",
+  narration:            upper(payload.remarks),
+  processedAt:          now() as String {format: "yyyy-MM-dd HH:mm:ss"}
+}]]></ee:set-payload>
+            </ee:message>
+        </ee:transform>
+        <logger doc:name="Logger" doc:id="owxlnq"/>
+    </flow>
+</mule>

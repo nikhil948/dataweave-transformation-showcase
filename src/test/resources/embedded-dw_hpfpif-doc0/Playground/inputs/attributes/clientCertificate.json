@@ -1,0 +1,76 @@
+{
+  "basicConstraints": 0,
+  "criticalExtensionOIDs": [
+    "consectetur",
+    "elit",
+    "pulvinar"
+  ],
+  "extendedKeyUsage": [
+    "molestie",
+    "sit",
+    "eros"
+  ],
+  "extensions": [
+    {
+      "criticality": false,
+      "oid": "dolor"
+    }
+  ],
+  "issuerAlternativeNames": [
+    {
+      "name": "Alethea",
+      "type": 89
+    }
+  ],
+  "issuerDN": {
+    "commonName": "a",
+    "name": "Cedric"
+  },
+  "issuerUniqueID": [
+    true,
+    true
+  ],
+  "issuerX500Principal": {
+    "name": "Adan"
+  },
+  "keyUsage": [
+    true,
+    false,
+    false
+  ],
+  "name": "Cody",
+  "nonCriticalExtensionOIDs": [
+    "sodales",
+    "tempor",
+    "ac"
+  ],
+  "notAfter": "2023-02-01",
+  "notBefore": "2022-01-18",
+  "publicKey": {
+    "algorithm": "adipiscing",
+    "modulus": 3,
+    "params": 14,
+    "publicKey": "dolor"
+  },
+  "serialNumber": 40,
+  "serialNumberObject": {
+    "serialNumber": 64
+  },
+  "sigAlgName": "Nam",
+  "sigAlgOID": "Fusce",
+  "subjectAlternativeNames": [
+    {
+      "name": "Claud",
+      "type": 17
+    }
+  ],
+  "subjectDN": {
+    "commonName": "Lorem",
+    "name": "Bryce"
+  },
+  "subjectX500Principal": {
+    "name": "Adolph"
+  },
+  "type": "Fusce",
+  "version": 39
+}

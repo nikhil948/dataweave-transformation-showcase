@@ -1,0 +1,72 @@
+{
+  "basicConstraints": 23,
+  "criticalExtensionOIDs": [
+    "faucibus",
+    "mi"
+  ],
+  "extendedKeyUsage": [
+    "vitae",
+    "sit"
+  ],
+  "extensions": [
+    {
+      "criticality": true,
+      "oid": "eget"
+    }
+  ],
+  "issuerAlternativeNames": [
+    {
+      "name": "Altagracia",
+      "type": 43
+    }
+  ],
+  "issuerDN": {
+    "commonName": "Nam",
+    "name": "Alina"
+  },
+  "issuerUniqueID": [
+    true,
+    true
+  ],
+  "issuerX500Principal": {
+    "name": "Clemente"
+  },
+  "keyUsage": [
+    false,
+    false
+  ],
+  "name": "Damian",
+  "nonCriticalExtensionOIDs": [
+    "erat",
+    "consectetur"
+  ],
+  "notAfter": "2025-07-22",
+  "notBefore": "2026-03-25",
+  "publicKey": {
+    "algorithm": "lorem",
+    "modulus": 63,
+    "params": 86,
+    "publicKey": "Pellentesque"
+  },
+  "serialNumber": 93,
+  "serialNumberObject": {
+    "serialNumber": 68
+  },
+  "sigAlgName": "arcu",
+  "sigAlgOID": "Fusce",
+  "subjectAlternativeNames": [
+    {
+      "name": "Ahmed",
+      "type": 99
+    }
+  ],
+  "subjectDN": {
+    "commonName": "sed",
+    "name": "Amanda"
+  },
+  "subjectX500Principal": {
+    "name": "Buddy"
+  },
+  "type": "molestie",
+  "version": 88
+}

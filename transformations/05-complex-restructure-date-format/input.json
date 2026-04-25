@@ -1,0 +1,8 @@
+{
+  "txn_ref":  "TXN20240101",
+  "txn_dt":   "2024-01-15",
+  "acct_no":  "ACC123456",
+  "amt":      15000.75,
+  "txn_type": "CR",
+  "remarks":  "salary credit"
+}

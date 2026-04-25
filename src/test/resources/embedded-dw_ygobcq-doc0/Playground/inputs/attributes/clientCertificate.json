@@ -1,0 +1,75 @@
+{
+  "basicConstraints": 54,
+  "criticalExtensionOIDs": [
+    "a",
+    "ut",
+    "amet"
+  ],
+  "extendedKeyUsage": [
+    "nunc",
+    "nunc",
+    "dui"
+  ],
+  "extensions": [
+    {
+      "criticality": true,
+      "oid": "Lorem"
+    }
+  ],
+  "issuerAlternativeNames": [
+    {
+      "name": "Aide",
+      "type": 99
+    }
+  ],
+  "issuerDN": {
+    "commonName": "ut",
+    "name": "Alesia"
+  },
+  "issuerUniqueID": [
+    false,
+    true
+  ],
+  "issuerX500Principal": {
+    "name": "Abel"
+  },
+  "keyUsage": [
+    false,
+    false
+  ],
+  "name": "Alfonso",
+  "nonCriticalExtensionOIDs": [
+    "semper",
+    "nibh",
+    "ipsum"
+  ],
+  "notAfter": "2026-03-22",
+  "notBefore": "2025-08-16",
+  "publicKey": {
+    "algorithm": "tempor",
+    "modulus": 49,
+    "params": 45,
+    "publicKey": "ac"
+  },
+  "serialNumber": 78,
+  "serialNumberObject": {
+    "serialNumber": 52
+  },
+  "sigAlgName": "Fusce",
+  "sigAlgOID": "ac",
+  "subjectAlternativeNames": [
+    {
+      "name": "Buddy",
+      "type": 66
+    }
+  ],
+  "subjectDN": {
+    "commonName": "venenatis",
+    "name": "Al"
+  },
+  "subjectX500Principal": {
+    "name": "Dannie"
+  },
+  "type": "viverra",
+  "version": 14
+}

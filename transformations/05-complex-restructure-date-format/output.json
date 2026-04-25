@@ -1,0 +1,8 @@
+{
+  "transactionReference": "TXN20240101",
+  "transactionDate":      "15-Jan-2024",
+  "accountNumber":        "ACC123456",
+  "transactionAmount":    15000.75,
+  "transactionType":      "CREDIT",
+  "narration":            "SALARY CREDIT"
+}

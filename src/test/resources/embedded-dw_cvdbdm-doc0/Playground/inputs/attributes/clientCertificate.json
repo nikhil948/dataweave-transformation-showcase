@@ -1,0 +1,76 @@
+{
+  "basicConstraints": 19,
+  "criticalExtensionOIDs": [
+    "a",
+    "Nunc",
+    "viverra"
+  ],
+  "extendedKeyUsage": [
+    "justo",
+    "molestie"
+  ],
+  "extensions": [
+    {
+      "criticality": false,
+      "oid": "consectetur"
+    }
+  ],
+  "issuerAlternativeNames": [
+    {
+      "name": "Christoper",
+      "type": 44
+    }
+  ],
+  "issuerDN": {
+    "commonName": "felis",
+    "name": "Colin"
+  },
+  "issuerUniqueID": [
+    true,
+    false,
+    true
+  ],
+  "issuerX500Principal": {
+    "name": "Allan"
+  },
+  "keyUsage": [
+    false,
+    true,
+    false
+  ],
+  "name": "Aisha",
+  "nonCriticalExtensionOIDs": [
+    "tempor",
+    "eget",
+    "consectetur"
+  ],
+  "notAfter": "2025-06-26",
+  "notBefore": "2024-03-08",
+  "publicKey": {
+    "algorithm": "justo",
+    "modulus": 59,
+    "params": 40,
+    "publicKey": "ipsum"
+  },
+  "serialNumber": 38,
+  "serialNumberObject": {
+    "serialNumber": 59
+  },
+  "sigAlgName": "felis",
+  "sigAlgOID": "lorem",
+  "subjectAlternativeNames": [
+    {
+      "name": "Adrianna",
+      "type": 95
+    }
+  ],
+  "subjectDN": {
+    "commonName": "In",
+    "name": "Ailene"
+  },
+  "subjectX500Principal": {
+    "name": "Amee"
+  },
+  "type": "erat",
+  "version": 90
+}

@@ -1,0 +1,14 @@
+<employees>
+  <employee>
+    <id>E001</id><name>Anjali Singh</name>
+    <status>ACTIVE</status><dept>IT</dept>
+  </employee>
+  <employee>
+    <id>E002</id><name>Raj Mehta</name>
+    <status>INACTIVE</status><dept>HR</dept>
+  </employee>
+  <employee>
+    <id>E003</id><name>Priya Nair</name>
+    <status>ACTIVE</status><dept>Finance</dept>
+  </employee>
+</employees>

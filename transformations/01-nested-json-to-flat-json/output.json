@@ -1,0 +1,8 @@
+{
+  "orderId": "ORD-001",
+  "customerName": "Ravi Kumar",
+  "email": "ravi@example.com",
+  "phone": "9876543210",
+  "totalAmount": 4500.00,
+  "orderStatus": "PENDING"
+}
